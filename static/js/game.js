@@ -10,7 +10,13 @@
 		else {
 			o.src ="static/images/dog_red.png";
 		}
-		o.className = "animated bounceIn";
+		//single effect
+		// o.className = "animated bounceIn";
+		
+		//multiple random effects
+		var animations = [ 'wobble', 'bounce', 'pulse', 'shake' , 'tada' ];
+		var random_animate = animations[Math.floor(Math.random()*animations.length)];
+		o.className = "animated " + random_animate ;
 		
 		
 		var sfx = new Audio("static/sounds/dog-woof.ogg");
