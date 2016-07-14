@@ -10,6 +10,7 @@
 		else {
 			o.src ="static/images/dog_red.png";
 		}
+		o.className = "animated bounceIn";
 		
 		
 		var sfx = new Audio("static/sounds/dog-woof.ogg");
