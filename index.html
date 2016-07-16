@@ -1,16 +1,47 @@
 <html>
 <head>
-	
+	<link rel = "icon" type = "image/gif/png/jpg" href = "static/images/dog_title.jpg">
 	<title>Game 1</title>
 	
 	<script type="text/javascript" src="static/js/game.js"></script>
 	
 	<link href="static/css/animate.css" rel="stylesheet" type="text/css" media="all" />
 	
-</head>
-<body style="background-color: #FFCC99;">
-	<h1>Game 1</h1>
+	<style type = "text/css">
+			body {
+			font: 600 14px/24px "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif;
+			}
+			#buttonclick {
+			border: 0;
+			background: #0087cc;
+			border-radius: 4px;
+			box-shadow: 0 5px 0 #006599;
+			color: #fff;
+			cursor: pointer;
+			font: inherit;
+			margin: 0;
+			outline: 0;
+			padding: 12px 20px;
+			transition: all .1s linear;
+			}
+			#buttonclick:active {
+			box-shadow: 0 2px 0 #006599;
+			transform: translateY(3px);
+			}
+	</style>
 	
+</head>
+<body>
+	<input id="buttonclick" type="button" value="CLICK HERE TO START!"  onclick="play()">
+	<audio id = "audio" src = "static/sounds/clap.ogg"> </audio>
+	<!-- Kuya pj paano ilipat sa gitna ung click? -->
+	<!-- Error pa eh kuya pj hindi ko magawa kung paano ung sound click -->
+	<!-- Nag search ako kuya pj ung .wav file supported sa lahat ng os. kaya mas maganda kung .wav -->
+	<br/>
+	<br/>
+	<br/>
+	
+	<div>
 	<table border="0" cellspacing="0" cellpadding="0" width="100%" align="center">
 	  <tr>
 	    <td align="center">
@@ -69,6 +100,6 @@
 	<img src="static/images/dog_blue.png" alt="" id="dog2" onclick="clicked( this );" />
 	<img src="static/images/dog_blue.png" alt="" id="dog2" onclick="clicked( this );" />
 	 -->
-	
+	</div>
 </body>
 </html>
